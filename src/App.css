@@ -399,3 +399,19 @@ button {
     text-align: center;
   }
 }
+
+.nav-actions .login-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.nav-actions .register-btn,
+.hero-actions .primary-btn,
+.cta-section .cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}

@@ -1,6 +1,7 @@
 import { ArrowRight, CalendarDays, HeartPulse, ShieldCheck, Stethoscope, Users } from "lucide-react";
 import "./App.css";
 import heroImage from "./assets/hero.png";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -43,8 +44,12 @@ function App() {
           </nav>
 
           <div className="nav-actions">
-            <button className="login-btn">Login</button>
-            <button className="register-btn">Get Started</button>
+            <Link to="/login" className="login-btn">
+              Login
+            </Link>
+            <Link to="/register" className="register-btn">
+              Get Started
+            </Link>
           </div>
         </div>
       </header>
@@ -68,12 +73,12 @@ function App() {
               </p>
 
               <div className="hero-actions">
-                <button className="primary-btn">
+                <Link to="/register" className="primary-btn">
                   Book an Appointment <ArrowRight size={18} />
-                </button>
-                <a href="#services" className="secondary-btn">
+                </Link>
+                <Link to="/services" className="secondary-btn">
                   Explore Services
-                </a>
+                </Link>
               </div>
 
               <div className="hero-stats">
